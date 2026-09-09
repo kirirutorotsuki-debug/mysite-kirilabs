@@ -1,0 +1,239 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'Minecraf'; /* Название, которое мы присваиваем шрифту */
+    src: url(../fonts/Minecraftia-Regular.ttf) format('truetype'); /* Путь к файлу */
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'F77'; /* Название, которое мы присваиваем шрифту */
+    src: url(../fonts/F77_Minecraft.ttf) format('truetype'); /* Путь к файлу */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/*    DARK THEME       */
+:root {
+  --background-color: linear-gradient(to left, #4B0082 5%, rgb(23, 23, 23) 95%);
+  --header: linear-gradient(to right, rgb(11, 11, 11) 5%, rgb(6, 6, 6) 95%);
+  --footer: linear-gradient(to right, rgb(11, 11, 11) 5%, rgb(6, 6, 6) 95%);
+  --text-color: #f3f4f6;
+  --background-color2: #b1b1b1;
+  --text-color2: #000000;
+  --text-color3: #8a8f9d;
+}
+/* 1. ОБЯЗАТЕЛЬНО задаем базовые значения переменных для светлой темы */
+/* :root {
+  --background-color: linear-gradient(-30deg, #8A2BE2 0%, rgb(205, 205, 205) 50%);
+  --header: linear-gradient(to right, rgb(186, 186, 186) 5%, rgb(172, 172, 172) 95%);
+  --footer: linear-gradient(to right, rgb(186, 186, 186) 5%, rgb(172, 172, 172) 95%);
+  --text-color: #222222;
+  --background-color2: #525252;
+  --text-color2: #ffffff;
+  --text-color3: #505154;
+} */
+
+/* 2. Изменяем значения этих же переменных для темной темы
+:root.dark-theme {
+  --background-color: linear-gradient(to left, #4B0082 5%, rgb(23, 23, 23) 95%);
+  --header: linear-gradient(to right, rgb(11, 11, 11) 5%, rgb(6, 6, 6) 95%);
+  --footer: linear-gradient(to right, rgb(11, 11, 11) 5%, rgb(6, 6, 6) 95%);
+  --text-color: #f3f4f6;
+  --background-color2: #b1b1b1;
+  --text-color2: #000000;
+  --text-color3: #8a8f9d;
+} */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+img {
+  width: 100%;
+}
+h1{
+  display: none;
+}
+/* 3. Применяем переменные к тегу body */
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* верхушка */
+header {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: var(--header);
+  border-bottom: 2px #8A2BE2 solid;
+
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 32px;
+  /* Создаем линейный градиент слева направо */
+  background: linear-gradient(to right, #00ffcc 50%, #8A2BE2 70%);
+  /* Магия: накладываем градиент только на текст */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+}
+.logo img {
+  margin: 0px 5px;
+  width: 50px;
+  
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+/* Базовые стили для ссылок */
+nav a{
+  gap: 8px;
+  font-size: 24px;
+  color: var(--text-color3);
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Стили для выбранной вкладки */
+nav a.active {
+  color: #00ffcc; /* Бирюзовый цвет текста */
+  border-bottom: 2px solid #00ffcc; /* Линия снизу */
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Эффект свечения текста */
+  background: rgba(0, 255, 204, 0.05); /* Легкий фон под вкладкой */
+}
+nav a:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.addbut a,.addbut button {
+  margin: 0px 2px;
+  padding: 1px 3px;  
+  background: none;
+  border: 1px solid #8A2BE2;
+  color: var(--text-color);
+  /* СБРОС ДЕФОЛТНЫХ СТИЛЕЙ КНОПКИ */
+  outline: none;
+  line-height: 1; /* Убираем влияние высоты строки на кнопку */
+  appearance: none; /* Отключаем системные стили ОС для кнопок */
+  -webkit-appearance: none;
+
+  /* ЖЕСТКИЕ ОДИНАКОВЫЕ РАЗМЕРЫ */
+  width: 35px !important;
+  height: 35px !important;
+  padding: 0px !important; /* Гарантированно убираем внутренние отступы */
+  
+  /* ФЛЕКС-ВЫРАВНИВАНИЕ */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  
+  /* Чтобы выстроить их по одной горизонтальной линии */
+  vertical-align: middle; 
+}
+.addbut a:hover,.addbut button:hover {
+  background: #8A2BE2;
+}
+
+/* подвал */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  align-items: start;
+  margin: 0px;
+  padding: 30px 0px; 
+  background: var(--footer);
+  color: var(--text-color);
+  border-top:  2px #8A2BE2 solid;
+  
+}
+.footertotal {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; 
+  gap: 10px;
+  max-width: 400px;
+}
+
+.footertotal a,.footertotal p{
+  padding: 0;
+  margin: 0;
+}
+/* первая колонка */
+.copyright {
+  font-size: 18px;
+}
+.disclaimer,.disclaimertotal,.version {
+  font-size: 14px;
+  color: var(--text-color3);
+  border-left: 2px solid var(--text-color3); 
+  line-height: 1.4;
+  padding: 5px 10px !important; 
+}
+.namecolumn {
+  color: #00ffcc;
+  font-size: 24px;
+}
+.nameproject {
+  color: #00ffcc;
+}
+/* вторая колонка */
+.footer_social{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 40px 40px 40px;
+  gap: 15px;
+}
+.help_a {
+  display: grid;
+  place-items: center; 
+  padding: 0; 
+  border: 2px solid #8A2BE2;
+  font-size: 16px;
+}
+.help_a:hover {
+  background: #8A2BE2;
+}
+/* третья колонка */
+.column_que {
+  padding: 5px 0px 5px 15px;
+  border-left: 2px solid var(--text-color3); 
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.questions {
+  font-size: 18px;
+  color: var(--text-color3);
+}
+.rec_launch {
+  font-size: 22px;
+  color: #8A2BE2;
+}
+.rec_vpn {
+  font-size: 22px;
+  color: #8A2BE2;
+}
+.questions:hover {
+  color: var(--text-color);
+  text-shadow: 0 0 20px #8A2BE2 ;
+}

@@ -1,0 +1,318 @@
+/* ==========================================================================
+   ПОЛНЫЙ ОБЪЕДИНЕННЫЙ БЛОК АДАПТИВНЫХ СТИЛЕЙ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ
+   (Для экранов шириной до 768px включительно)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+  
+  /* ------------------------------------------------------------------------
+     1. БАЗОВЫЕ НАСТРОЙКИ ШРИФТА И ОТСТУПОВ
+     ------------------------------------------------------------------------ */
+  body {
+    font-size: 16px !important; /* Уменьшаем базовый шрифт для мобильных экранов */
+  }
+
+  /* ------------------------------------------------------------------------
+     2. ШАПКА САЙТА (HEADER & NAVIGATION)
+     ------------------------------------------------------------------------ */
+  header {
+    flex-direction: column !important; /* Элементы встают друг под друга: Лого -> Меню -> Кнопки */
+    gap: 15px !important;
+    padding: 15px 10px !important;
+    text-align: center !important;
+  }
+
+  .logo:hover {
+    transform: none !important; /* Отключаем увеличение при ховере на мобилках */
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: column !important; /* Ссылки меню выстраиваются вертикально */
+    width: 100% !important;
+    gap: 5px !important;
+  }
+
+  nav a {
+    font-size: 18px !important;
+    padding: 8px 10px !important;
+    display: block !important;
+    border-bottom: 1px solid rgba(138, 43, 226, 0.2) !important; /* Легкое разделение пунктов */
+  }
+
+  nav a.active {
+    border-bottom: 2px solid #00ffcc !important; /* Сохраняем бирюзовую линию */
+  }
+
+  .addbut {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 5px !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     3. ГЛАВНАЯ СТРАНИЦА (MAIN CONTENT)
+     ------------------------------------------------------------------------ */
+  main {
+    padding: 15px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+  main img {
+    width: 100% !important; /* Скриншот подстраивается под ширину экрана */
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  main p {
+    width: 100% !important; /* Текст больше не зажат в 500px */
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    margin: 15px 0 !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     4. СТРАНИЦА СБОРОК И МОДАЛЬНЫЕ ОКНА (.MODPACK)
+     ------------------------------------------------------------------------ */
+  .navigationButtons {
+    display: flex !important;
+  }
+  
+  .modpack {
+    flex-direction: column !important; /* Карточки выстраиваются в одну колонку */
+    gap: 15px !important;
+    width: 100% !important;
+    align-items: center !important;
+  }
+  
+  .blockpack {
+    margin: 10px 0 !important;
+    width: 90% !important;
+    max-width: 320px !important;
+    height: auto !important; /* Убираем фиксированные 250px, карточка растет под контент */
+    min-height: 280px !important;
+    padding: 15px 10px !important;
+  }
+
+  .blockpack img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .blockpack button {
+    width: 90% !important;
+    padding: 12px 0 !important;
+    font-size: 13px !important;
+  }
+
+  .getmore {
+    margin: 20px 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  
+  .getmore a, #addModpackBtn {
+    margin: 8px 0 !important;
+    width: 85% !important;
+    max-width: 250px !important;
+    box-sizing: border-box !important;
+  }
+  
+  .getmore a:hover, #addModpackBtn:hover {
+    transform: none !important;
+  }
+
+  /* Окно Dialog */
+  dialog {
+    padding: 15px !important;
+    width: 90% !important;
+    max-width: 340px !important;
+    box-sizing: border-box !important;
+  }
+
+  .talkDownloader {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .talkDownloader h3 {
+    font-size: 22px !important;
+  }
+
+  .talkDownloader p, .creator {
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+
+  .talkDownloader h4 {
+    font-size: 18px !important;
+  }
+
+  .talkDownloader img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 2 / 1 !important;
+  }
+
+  .talkDownloader a {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+  }
+
+  .talkDownloader button {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    padding: 5px 10px !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     5. ГЕНЕРАТОР ПАРОЛЕЙ
+     ------------------------------------------------------------------------ */
+  .password-page {
+    padding: 30px 10px !important;
+    min-height: auto !important;
+  }
+
+  .password-container {
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  .page-header h1.page-title {
+    font-size: 26px !important;
+    letter-spacing: 0px !important;
+  }
+
+  .generator-box {
+    padding: 20px 15px !important;
+    gap: 20px !important;
+  }
+
+  .password-display-wrapper {
+    flex-direction: column !important; /* Поле вывода и кнопка встают друг под друга */
+    gap: 12px !important;
+  }
+
+  #password-output {
+    font-size: 16px !important;
+    padding: 14px 10px !important;
+    text-align: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #btn-copy {
+    padding: 12px 0 !important;
+    width: 100% !important;
+    font-size: 15px !important;
+  }
+
+  .checkbox-group {
+    grid-template-columns: 1fr !important; /* Чекбоксы выстраиваются в одну колонку */
+    gap: 12px !important;
+  }
+
+  .checkbox-container {
+    font-size: 15px !important;
+    padding: 6px 0 !important;
+  }
+
+  .checkbox-container input {
+    width: 20px !important; /* Делаем чекбоксы больше для удобства тапа */
+    height: 20px !important;
+  }
+
+  #btn-generate {
+    padding: 14px !important;
+    font-size: 15px !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     6. СТРАНИЦА ТЕЛЕМЫ (THELEMA PROFILE & SKILLS)
+     ------------------------------------------------------------------------ */
+  .thelema-page {
+    padding: 30px 15px !important;
+  }
+
+  .thelema-container {
+    gap: 40px !important;
+  }
+
+  .character-intro {
+    flex-direction: column !important; /* Картинка и описание встают по вертикали */
+    gap: 30px !important;
+  }
+
+  .char-image-box {
+    min-width: 100% !important;
+    order: 1 !important;
+  }
+
+  .char-img {
+    max-width: 80% !important;
+    margin: 0 auto !important;
+  }
+
+  .char-profile {
+    min-width: 100% !important;
+    order: 2 !important;
+    text-align: center !important;
+  }
+
+  .char-profile h1.char-name {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+
+  .char-title-alias {
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .profile-card {
+    padding: 20px 15px !important;
+    text-align: left !important; /* Оставляем выравнивание текста внутри карточки по левому краю */
+  }
+
+  .section-title {
+    font-size: 22px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .skills-grid {
+    flex-direction: column !important; /* Сетка навыков превращается в список */
+    gap: 15px !important;
+  }
+
+  .skill-card {
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+    padding: 15px !important;
+  }
+  
+  .skill-card:hover {
+    transform: none !important; /* Отключаем прыжок карточки при тапе */
+  }
+
+  /* ------------------------------------------------------------------------
+     7. ПОДВАЛ САЙТА (FOOTER)
+     ------------------------------------------------------------------------ */
+  footer {
+    flex-direction: column !important;
+    gap: 50px;
+    align-items: center;
+  }
+}

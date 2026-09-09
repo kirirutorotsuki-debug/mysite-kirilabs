@@ -1,0 +1,230 @@
+/* ==========================================================================
+   ПОЛНЫЙ ИСПРАВЛЕННЫЙ БЛОК СТИЛЕЙ ДЛЯ СТРАНИЦЫ ТЕЛЕМЫ
+   ========================================================================== */
+
+/* Контейнер всей страницы */
+.thelema-page {
+    padding: 60px 20px !important;
+    font-family: 'Inter', sans-serif !important;
+    min-height: 100vh !important;
+    display: block !important;
+}
+
+.thelema-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 80px !important;
+}
+
+/* --- СЕКЦИЯ ПРОФИЛЯ --- */
+.character-intro {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 50px !important;
+    width: 100% !important;
+}
+
+.char-image-box {
+    flex: 1 !important;
+    min-width: 300px !important;
+    display: flex !important;
+    justify-content: center !important;
+    position: relative !important;
+}
+
+.char-img {
+    max-width: 100% !important;
+    height: auto !important;
+    filter: drop-shadow(0 0 25px rgba(170, 0, 255, 0.4)) !important;
+    animation: floatAnim 4s ease-in-out infinite !important;
+}
+
+@keyframes floatAnim {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.char-profile {
+    flex: 1.2 !important;
+    min-width: 300px !important;
+    display: block !important;
+}
+
+.battlesuit-title {
+    color: #00ffcc !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    display: block !important;
+}
+
+/* Главное имя персонажа (Запрещаем слетать влево) */
+.char-profile h1.char-name {
+    font-size: 48px !important;
+    font-weight: 900 !important;
+    margin: 10px 0 5px 0 !important;
+    color: #ffffff !important;
+    letter-spacing: 1px !important;
+    display: block !important;
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.char-profile h1.char-name span {
+    color: rgb(170, 0, 255) !important;
+    text-shadow: 0 0 15px rgba(170, 0, 255, 0.6) !important;
+}
+
+.char-title-alias {
+    font-size: 18px !important;
+    color: #8a8f9d !important;
+    margin-bottom: 30px !important;
+    font-style: italic !important;
+    display: block !important;
+}
+
+/* Карточка досье */
+.profile-card {
+    background: rgba(17, 10, 31, 0.8) !important;
+    border: 1px solid rgba(170, 0, 255, 0.3) !important;
+    padding: 25px !important;
+    border-radius: 4px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    display: block !important;
+}
+
+.profile-card h3 {
+    color: #ffffff !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+    border-bottom: 1px solid rgb(170, 0, 255) !important;
+    padding-bottom: 8px !important;
+    display: block !important;
+}
+
+.profile-card p {
+    margin: 8px 0 !important;
+    font-size: 15px !important;
+    display: block !important;
+    white-space: normal !important;
+}
+
+.profile-card strong {
+    color: #00ffcc !important;
+}
+
+.char-lore {
+    margin-top: 15px !important;
+    line-height: 1.6 !important;
+    color: #b9bbca !important;
+}
+
+/* --- СЕКЦИЯ НАВЫКОВ (ИСПРАВЛЕННАЯ СЕТКА) --- */
+.character-skills {
+    display: block !important;
+    width: 100% !important;
+}
+
+.section-title {
+    font-size: 28px !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 40px !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+.section-title::after {
+    content: '' !important;
+    display: block !important;
+    width: 60px !important;
+    height: 3px !important;
+    background: #00ffcc !important;
+    margin: 10px auto 0 auto !important;
+}
+
+/* Сетка для карточек (Защита от сжатия и слипания в ряд) */
+.skills-grid {
+    display: flex !important;
+    flex-wrap: wrap !important; 
+    gap: 25px !important;
+    width: 100% !important;
+}
+
+/* Сами карточки навыков */
+.skill-card {
+    background: rgba(20, 20, 30, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 20px !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+    
+    display: block !important; 
+    height: auto !important;   
+    flex: 1 1 calc(25% - 25px) !important; 
+    min-width: 250px !important; 
+    box-sizing: border-box !important;
+}
+
+/* Фикс для всего текста внутри карточек (Принудительный сброс) */
+.skill-card h4, 
+.skill-card p, 
+.skill-card .skill-type,
+.skill-card .skill-header {
+    display: block !important;
+    position: static !important; 
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: normal !important; 
+    text-align: left !important;
+}
+
+.skill-header {
+    margin-bottom: 15px !important;
+}
+
+.skill-type {
+    font-size: 11px !important;
+    text-transform: uppercase !important;
+    color: #8a8f9d !important;
+}
+
+.skill-card h4 {
+    font-size: 18px !important;
+    color: #ffffff !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+.skill-card p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: #b9bbca !important;
+}
+
+/* Подсветка карточки ультимейта (Бирюзовая) */
+.skill-card.active-skill {
+    border-color: #00ffcc !important;
+    background: rgba(0, 255, 204, 0.03) !important;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.1) !important;
+}
+
+.skill-card.active-skill h4 {
+    color: #00ffcc !important;
+}
+
+/* Ховер-эффект для всех карточек при наведении */
+.skill-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgb(170, 0, 255) !important;
+    background: rgba(170, 0, 255, 0.05) !important;
+    box-shadow: 0 5px 20px rgba(170, 0, 255, 0.2) !important;
+}
