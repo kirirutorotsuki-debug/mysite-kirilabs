@@ -1,5 +1,5 @@
 <?php include 'inc/header.php';?>
-<h1>Cтраница сборок модов сайта KIRPACKS</h1>
+<h1>Modpacks for minecraft page KIRILABS</h1>
 <main class="shield">             
     <div class="getmore">
     <a href="https://drive.google.com/drive/folders/1TkyrL8lssNahJT2zwkBxbZZ-9WvcCLN2?usp=drive_link">Папка с Модпаками</a>

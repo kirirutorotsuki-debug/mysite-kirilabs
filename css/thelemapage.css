@@ -21,6 +21,7 @@
 /* --- СЕКЦИЯ ПРОФИЛЯ --- */
 .character-intro {
     display: flex !important;
+    flex-direction: row;
     flex-wrap: wrap !important;
     align-items: center !important;
     gap: 50px !important;

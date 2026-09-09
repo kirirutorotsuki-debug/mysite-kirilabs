@@ -1,56 +1,60 @@
 <?php include 'inc/header.php';?>
 
-<main class="homepage">
-    <!-- Секция 1: Главный баннер (Hero Section) -->
+<main class="mainpage">
+    <!-- название страницы -->
+    <h1>Main page laboratory advenchiements kirilabs</h1>
+    <!-- щит встречи -->
     <section class="hero">
-        <h1 class="heroh2"><?php echo $txt['welcome']; ?></h1>
-        <h2 class="heroh3"><?php echo $txt['sub_welcome']; ?></h2>
-        
-        <div class="hero-banner-container">
-            <img class="heroimg" src="img/sc71.png" alt="banner">
-        </div>
-
-        <!-- Крупная неоновая кнопка перехода к сборкам -->
-        <a href="modpacks.php" class="btn-cta">⚡ Смотреть сборки</a>
-    </section>
-
-    <!-- Секция 2: Преимущества (Features Section) -->
-    <section class="features">
-        <div class="feature-card">
-            <div class="feature-icon">🚀</div>
-            <h3>Высокий FPS</h3>
-            <p>Тщательная оптимизация модов и конфигураций для стабильной игры без лагов даже на слабых ПК.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon">🛠️</div>
-            <h3>Стабильность</h3>
-            <p>Сборки проходят жесткие тесты на совместимость, исключая вылеты, баги и конфликты модов.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon">📜</div>
-            <h3>Уникальный опыт</h3>
-            <p>Продуманный баланс, настроенные квесты и измененные рецепты крафтов для интересного прохождения.</p>
+        <h2><?php echo $txt['welcome']; ?></h2>
+        <div class="purpleblock">
+            <p class="textpurpleblock"><?php echo $txt['sub_welcome']; ?></p>
+            <img src="img/Thelema_Sonque_NoGlow.png" alt="" class="imgpurpleblock">
         </div>
     </section>
-
-    <!-- Секция 3: Быстрый старт (How to Start) -->
-    <section class="quick-start">
-        <h2 class="section-title">Как начать играть?</h2>
-        <div class="steps-container">
-            <div class="step">
-                <span class="step-num">01</span>
-                <p>Скачайте один из рекомендуемых лаунчеров в подвале сайта.</p>
+    <!-- секция с мини вкладками и описанием -->
+    <section class="pagessi">
+        <p class="infopagessi"><?php echo $txt['ipsi']; ?></p>
+        <div class="si modpacks">
+            <img src="img/sc71.png" alt="" class="pagessiimg">
+            <div class="pagessitext">
+                <p class="name"><?php echo $txt['mname']; ?></p>
+                <p class="description"><?php echo $txt['mdes']; ?></p>
             </div>
-            <div class="step">
-                <span class="step-num">02</span>
-                <p>Перейдите во вкладку «Сборки» и выберите понравившийся модпак.</p>
+            <!-- кнопка свгшка -->
+            <a href="modpacks.php" class="pagessibutton"><svg width="100" height="250" viewBox="0 0 100 250" fill="none" xmlns="http://w3.org" class="card-arrow-svg">
+            <path d="M4 90 H14 L49 125 L14 160 H4 L39 125 Z" fill="#000000" class="arrow-segment"/>
+            <path d="M26 90 H36 L71 125 L36 160 H26 L61 125 Z" fill="#000000" class="arrow-segment"/>
+            <path d="M48 90 H58 L93 125 L58 160 H48 L83 125 Z" fill="#000000" class="arrow-segment"/>
+            </svg>
+            </a>
+        </div>
+        <div class="si thelema">
+            <img src="img/3_12_ThumbsUp.png" alt="" class="pagessiimg">
+            <div class="pagessitext">
+                <p class="name"><?php echo $txt['tname']; ?></p>
+                <p class="description"><?php echo $txt['tdes']; ?></p>
             </div>
-            <div class="step">
-                <span class="step-num">03</span>
-                <p>Скачайте архив по кнопке, установите в лаунчер и наслаждайтесь игрой!</p>
+            <!-- кнопка свгшка -->
+            <a href="thelema.php" class="pagessibutton"><svg width="100" height="250" viewBox="0 0 100 250" fill="none" xmlns="http://w3.org" class="card-arrow-svg">
+            <path d="M4 90 H14 L49 125 L14 160 H4 L39 125 Z" fill="#000000" class="arrow-segment"/>
+            <path d="M26 90 H36 L71 125 L36 160 H26 L61 125 Z" fill="#000000" class="arrow-segment"/>
+            <path d="M48 90 H58 L93 125 L58 160 H48 L83 125 Z" fill="#000000" class="arrow-segment"/>
+            </svg>
+            </a>
+        </div>
+        <div class="si game">
+            <img src="" alt="" class="pagessiimg">
+            <div class="pagessitext">
+                <p class="name"><?php echo $txt['gname']; ?></p>
+                <p class="description"><?php echo $txt['gdes']; ?></p>
             </div>
+            <!-- кнопка свгшка -->
+            <a href="" class="pagessibutton"><svg width="100" height="250" viewBox="0 0 100 250" fill="none" xmlns="http://w3.org" class="card-arrow-svg">
+            <path d="M4 90 H14 L49 125 L14 160 H4 L39 125 Z" fill="#000000" class="arrow-segment"/>
+            <path d="M26 90 H36 L71 125 L36 160 H26 L61 125 Z" fill="#000000" class="arrow-segment"/>
+            <path d="M48 90 H58 L93 125 L58 160 H48 L83 125 Z" fill="#000000" class="arrow-segment"/>
+            </svg>
+            </a>
         </div>
     </section>
 </main>

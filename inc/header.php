@@ -14,12 +14,22 @@ include 'lang_init.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIRILABS</title>
-    <link rel="stylesheet" href="css/style.css?v=2">       <!-- Общие базовые стили сайта -->
-    <link rel="stylesheet" href="css/mobile.css?v=1">      <!-- Стили для отображения на телефонах -->
-    <link rel="stylesheet" href="css/mainpage.css?v=2">    <!-- Оформление главной страницы -->
-    <link rel="stylesheet" href="css/modpackpage.css?v=1"> <!-- Оформление страницы с модпаками -->
-    <link rel="stylesheet" href="css/passwordpage.css?v=1"><!-- Оформление страницы авторизации/паролей -->
-    <link rel="stylesheet" href="css/thelemapage.css?v=1"> <!-- Оформление специальной страницы Thelema -->
+        <!-- Search Engine Meta Tags (Google, Bing) -->
+    <meta name="description" content="KIRILABS — Achievement Laboratory. Custom Minecraft modpacks, personal projects, games, and character profiles.">
+    <meta name="keywords" content="kirilabs, minecraft modpacks, minecraft builds, thelema nutriscu, gaming repository">
+
+    <!-- Social Media Embeds (Discord, Telegram, Twitter) -->
+    <meta property="og:title" content="KIRILABS | Achievement Laboratory">
+    <meta property="og:description" content="Explore custom Minecraft modpacks, personal projects, and interactive character sheets.">
+    <meta property="og:image" content="https://your-site.com">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css?v=3">       <!-- Общие базовые стили сайта -->
+    <link rel="stylesheet" href="css/mobile.css?v=3">      <!-- Стили для отображения на телефонах -->
+    <link rel="stylesheet" href="css/mainpage.css?v=3">    <!-- Оформление главной страницы -->
+    <link rel="stylesheet" href="css/modpackpage.css?v=3"> <!-- Оформление страницы с модпаками -->
+    <link rel="stylesheet" href="css/passwordpage.css?v=3"><!-- Оформление страницы авторизации/паролей -->
+    <link rel="stylesheet" href="css/thelemapage.css?v=3"> <!-- Оформление специальной страницы Thelema -->
 </head>
 <body> <!-- Внутри этого тега находится всё визуальное содержимое сайта, которое видит пользователь -->
 
@@ -67,7 +77,7 @@ include 'lang_init.php';
     <header> 
         <!-- Ссылка-логотип, ведущая на главную страницу -->
         <!-- img — тег картинки. src указывает путь к файлу логотипа, alt — текст, если картинка не загрузится, width — ширина 50px -->
-        <a href="index.php" class="logo"><img src="img/logo3.png" alt="" width="50px">KIRILABS</a>
+        <a href="index.php" class="logo"><img src="img/logoEma3.png" alt="" width="50px">KIRILABS</a>
         
         <!-- nav — тег для группы навигационных ссылок (меню) с классом 'pages' -->
         <nav class="pages">
@@ -116,7 +126,9 @@ include 'lang_init.php';
             <!-- Ссылки для смены языка. При клике они добавляют параметр ?lang= в адресную строку, 
                  который улавливается и обрабатывается кодом в файле lang_init.php -->
             <a href="?lang=ru">RU</a> 
-            <!-- <a href="?lang=en">EN</a>  -->
-            <!-- <a href="?lang=fi">FI</a> -->
+            <a href="?lang=en">EN</a> 
+            <a href="?lang=fi">FI</a>
+            <a href="?lang=jp">JP</a>
+            <a href="?lang=cn">CN</a>
         </div>
     </header>

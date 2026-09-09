@@ -1,192 +1,97 @@
-/* ==========================================================================
-   ОСНОВНОЙ КОНТЕЙНЕР СТРАНИЦЫ
-   ========================================================================== */
-.homepage {
-
-    font-family: 'Minecraf', sans-serif;
-    padding: 40px 20px;
+main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 80px; /* Расстояние между большими секциями */
-    min-height: 100vh;
-    box-sizing: border-box;
-}
-
-/* ==========================================================================
-   СЕКЦИЯ 1: ГЛАВНЫЙ БАННЕР (HERO)
-   ========================================================================== */
-.hero {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    max-width: 900px;
     width: 100%;
+    
 }
-
-.heroh2 {
-    font-family: 'F77', sans-serif;
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+    margin: 15px 0;
+}
+.hero h2 {
+    color: var(--aneon);
+}
+.hero p {
+    font-family: 'Times New Roman', Times, serif;
+}
+.purpleblock {
+    background: #37125a;
+     background: rgb(29, 0, 50);
+    border-radius: 15px;
+    width: 60%;
+    box-shadow: 5px 5px 10px black;
+    border: 2px var(--aneon) solid;
+    padding: 5px 20px;
+    transition: 0.3s all;
+}
+.purpleblock:hover {
+    box-shadow: 0 0 10px var(--aneon);
+}
+.imgpurpleblock {
+    border: 2px #4f1783 solid;
+    border-radius: 15px;
+}
+.infopagessi{
+    color: #FFD700;
     font-size: 28px;
-    color: #fff;
-    margin-bottom: 15px;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
-
-.heroh3 {
-    font-family: 'Minecraf', sans-serif;
-    font-size: 18px;
-    color: #00ffcc; /* Фирменный бирюзовый акцент */
-    font-weight: 200;
-    margin-bottom: 30px;
-}
-
-.hero-banner-container {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid rgba(138, 43, 226, 0.3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    margin-bottom: 35px;
-}
-
-.heroimg {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-/* Большая неоновая кнопка CTA */
-.btn-cta {
-    font-family: 'F77', sans-serif;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-    background-color: transparent;
-    border: 2px solid #8A2BE2; /* Фиолетовый неон */
-    padding: 15px 40px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px rgba(138, 43, 226, 0.4);
-    transition: all 0.3s ease;
-}
-
-.btn-cta:hover {
-    background-color: #8A2BE2;
-    box-shadow: 0 0 25px rgba(138, 43, 226, 0.8);
-    transform: translateY(-3px);
-}
-
-/* ==========================================================================
-   СЕКЦИЯ 2: ПРЕИМУЩЕСТВА (ГРИД-КАРТОЧКИ)
-   ========================================================================== */
-.features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
-    gap: 30px;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.feature-card {
-    background-color: rgba(13, 9, 23, 0.75); /* Полупрозрачный темный фон досье */
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.feature-card:hover {
-    border-color: #8A2BE2;
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
-    transform: translateY(-4px);
-}
-
-.feature-icon {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.feature-card h3 {
-    font-family: 'F77', sans-serif;
-    font-size: 18px;
-    color: #00ffcc; /* Бирюзовые заголовки карточек */
-    margin: 0 0 12px 0;
-}
-
-.feature-card p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-}
-
-/* ==========================================================================
-   СЕКЦИЯ 3: БЫСТРЫЙ СТАРТ
-   ========================================================================== */
-.quick-start {
-    max-width: 1000px;
-    width: 100%;
-    text-align: center;
-}
-
-.section-title {
-    font-family: 'F77', sans-serif;
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 40px;
-}
-
-.steps-container {
+.si {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    background: rgb(29, 0, 50);
+    border-radius: 15px;
+    width: 60%;
+    box-shadow: 5px 5px 10px black;
+    border: 2px #FFD700 solid;
+    margin: 15px 0;
+    transition: 0.5s all;
+}
+.si:hover {
+    box-shadow: 0 0 15px rgb(255, 0, 0);
+    border: 2px #ff0000 solid;
+    box-shadow: 0 0 15px var(--bneon);
+    border: 2px var(--bneon) solid;
+    transform: translateY(-10px);
+}
+.pagessiimg {
+    width: 320px;
+    height: 220px;
+    border-radius: 15px;
+    margin: 0 10px ;
+    border: 2px #4f1783 solid;
 }
 
-.step {
-    flex: 1;
-    background-color: rgba(13, 9, 23, 0.4);
-    border-left: 2px solid #8A2BE2; /* Фиолетовая полоса слева, как у дисклеймера */
-    padding: 15px 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.pagessitext .name {
+    font-size: 22px;
+}
+.pagessitext .description {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
-.step-num {
-    font-family: 'F77', sans-serif;
-    font-size: 20px;
-    color: #00ffcc;
-}
-
-.step p {
-    font-size: 14px;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.8);
+.pagessibutton {
+    background: var(--text-color3);
+    height: 250px;
+    width: 100px;
+    border-radius: 0 15px 15px 0;
+    padding: 0;
     margin: 0;
+    transition: 0.2s all;
 }
-
-/* ==========================================================================
-   АДАПТИВНОСТЬ (МОБИЛЬНЫЕ ЭКРАНЫ)
-   ========================================================================== */
-@media (max-width: 800px) {
-    .homepage {
-        gap: 50px;
-    }
-    .heroh2 {
-        font-size: 22px;
-    }
-    .features {
-        grid-template-columns: 1fr; /* Карточки преимуществ встают в 1 колонку */
-        gap: 20px;
-    }
-    .steps-container {
-        flex-direction: column; /* Шаги старта выстраиваются вертикально */
-        gap: 15px;
-    }
+.pagessibutton:hover {
+    background: var(--aneon);
+}
+.game {
+    display: none;
 }

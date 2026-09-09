@@ -15,7 +15,7 @@
         <!-- Блок с описанием целей создания сайта (учебный/тестовый режим) -->
         <p class="disclaimertotal"><?php echo $txt['disclaimertotal']?></p>
         <!-- Версия сайта на данный момент -->
-        <p class="version"><?php echo $txt['version']?> 0.92</p>
+        <p class="version"><?php echo $txt['version']?> 0.93</p>
     </div>
     
     <!-- Вторая колонка: контакты и социальные сети -->
