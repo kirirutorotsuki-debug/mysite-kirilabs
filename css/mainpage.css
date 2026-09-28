@@ -1,4 +1,4 @@
-main {
+.mainpage {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -14,34 +14,32 @@ section{
     align-items: center;
     text-align: center;
     width: 100%;
-    color: aliceblue;
+    color: white;
     margin: 15px 0;
 }
 .hero h2 {
-    color: var(--aneon);
+    color: white;
 }
 .hero p {
     font-family: 'Times New Roman', Times, serif;
 }
 .purpleblock {
-    background: #37125a;
-     background: rgb(29, 0, 50);
+    background: var(--header);
     border-radius: 15px;
     width: 60%;
     box-shadow: 5px 5px 10px black;
-    border: 2px var(--aneon) solid;
+    border: 1px var(--main) solid;
     padding: 5px 20px;
     transition: 0.3s all;
 }
 .purpleblock:hover {
-    box-shadow: 0 0 10px var(--aneon);
+    box-shadow: 0 0 10px var(--main);
 }
 .imgpurpleblock {
-    border: 2px #4f1783 solid;
     border-radius: 15px;
 }
 .infopagessi{
-    color: #FFD700;
+    color: var(--first);
     font-size: 28px;
 }
 .si {
@@ -49,19 +47,16 @@ section{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: rgb(29, 0, 50);
+    background: var(--header);
     border-radius: 15px;
     width: 60%;
     box-shadow: 5px 5px 10px black;
-    border: 2px #FFD700 solid;
+    border: 1px var(--first) solid;
     margin: 15px 0;
     transition: 0.5s all;
 }
 .si:hover {
-    box-shadow: 0 0 15px rgb(255, 0, 0);
-    border: 2px #ff0000 solid;
-    box-shadow: 0 0 15px var(--bneon);
-    border: 2px var(--bneon) solid;
+    box-shadow: 0 0 15px var(--first);
     transform: translateY(-10px);
 }
 .pagessiimg {
@@ -69,7 +64,6 @@ section{
     height: 220px;
     border-radius: 15px;
     margin: 0 10px ;
-    border: 2px #4f1783 solid;
 }
 
 .pagessitext .name {
@@ -84,13 +78,13 @@ section{
     background: var(--text-color3);
     height: 250px;
     width: 100px;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 12px 12px 0;
     padding: 0;
     margin: 0;
     transition: 0.2s all;
 }
 .pagessibutton:hover {
-    background: var(--aneon);
+    background: var(--main);
 }
 .game {
     display: none;

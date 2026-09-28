@@ -4,7 +4,7 @@ return [
     // верхушка (header)
     'page_main' => 'Home',
     'page_mod' => 'Modpacks',
-    'page_pas' => 'Password',
+    'page_pas' => 'Account',
     'page_thelema' => 'Thelema',
     // подвал (footer)
     'copyright' => 'Trotsky Kirill Sergeevich',

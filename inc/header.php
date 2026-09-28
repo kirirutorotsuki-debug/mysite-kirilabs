@@ -24,14 +24,14 @@ include 'lang_init.php';
     <meta property="og:image" content="https://your-site.com">
     <meta property="og:type" content="website">
 
-    <link rel="stylesheet" href="css/style.css?v=3">       <!-- Общие базовые стили сайта -->
-    <link rel="stylesheet" href="css/mobile.css?v=3">      <!-- Стили для отображения на телефонах -->
-    <link rel="stylesheet" href="css/mainpage.css?v=3">    <!-- Оформление главной страницы -->
-    <link rel="stylesheet" href="css/modpackpage.css?v=3"> <!-- Оформление страницы с модпаками -->
-    <link rel="stylesheet" href="css/passwordpage.css?v=3"><!-- Оформление страницы авторизации/паролей -->
-    <link rel="stylesheet" href="css/thelemapage.css?v=3"> <!-- Оформление специальной страницы Thelema -->
+    <link rel="stylesheet" href="css/style.css?v=4">       <!-- Общие базовые стили сайта -->
+    <link rel="stylesheet" href="css/mobile.css?v=4">      <!-- Стили для отображения на телефонах -->
+    <link rel="stylesheet" href="css/mainpage.css?v=4">    <!-- Оформление главной страницы -->
+    <link rel="stylesheet" href="css/modpackpage.css?v=4"> <!-- Оформление страницы с модпаками -->
+    <link rel="stylesheet" href="css/thelemapage.css?v=4"> <!-- Оформление специальной страницы Thelema -->
+    <link rel="stylesheet" href="css/passwordpage.css?v=4">
 </head>
-<body> <!-- Внутри этого тега находится всё визуальное содержимое сайта, которое видит пользователь -->
+<body class="<?php echo $body_class ?? 'main'; ?>">
 
     <script>
     // document.addEventListener — вешаем «слушатель событий» на всю страницу.
@@ -77,7 +77,7 @@ include 'lang_init.php';
     <header> 
         <!-- Ссылка-логотип, ведущая на главную страницу -->
         <!-- img — тег картинки. src указывает путь к файлу логотипа, alt — текст, если картинка не загрузится, width — ширина 50px -->
-        <a href="index.php" class="logo"><img src="img/logoEma3.png" alt="" width="50px">KIRILABS</a>
+        <a href="index.php" class="logo"><img src="https://thumbs.dreamstime.com/b/scientific-microscope-icon-blue-background-educational-purposes-image-features-clean-modern-set-against-vibrant-441087897.jpg" alt="" width="50px">KIRILABS</a>
         
         <!-- nav — тег для группы навигационных ссылок (меню) с классом 'pages' -->
         <nav class="pages">
@@ -106,19 +106,20 @@ include 'lang_init.php';
                 </svg>
                 <?php echo $txt['page_mod']; ?>
             </a>
-            <!-- <a href="repassword.php">
-                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="22" height="22" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5; vertical-align: center; margin-right: 6px;">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                </svg>
-                <?php echo $txt['page_pas']; ?>
-            </a>     -->
+            
             <a href="thelema.php">
                 <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="22" height="22" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5; vertical-align: center; margin-right: 6px;">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                 </svg>
                 <?php echo $txt['page_thelema']; ?>
             </a>
+            <a href="auth.php">
+                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="22" height="22" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5; vertical-align: center; margin-right: 6px;">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <?php echo $txt['page_pas']; ?>
+            </a>  
         </nav>
         
         <!-- div — универсальный блок-контейнер для кнопок управления в правой части шапки -->

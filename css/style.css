@@ -13,53 +13,53 @@
     font-style: normal;
     font-display: swap;
 }
-/*    DARK THEME       */
+/* Мои переменные */
 :root {
-  --background-color: linear-gradient(to left, #4B0082 5%, rgb(23, 23, 23) 95%);
-  --header: linear-gradient(to right, rgb(11, 11, 11) 5%, rgb(6, 6, 6) 95%);
-  --footer: linear-gradient(to right, rgb(11, 11, 11) 5%, rgb(6, 6, 6) 95%);
+  --backmain: linear-gradient(to left, #070050 5%, rgb(6, 0, 47) 95%);
+  --backmine: linear-gradient(to left, #034d00 5%, rgb(0, 42, 1) 95%);
+  --backnutr: linear-gradient(to left, #2e004f 5%, rgb(40, 0, 52) 95%);
+  --header: #050508;
+  --footer: #050508;
   --text-color: #f3f4f6;
-  --background-color2: #b1b1b1;
+  --back2: #b1b1b1;
   --text-color2: #000000;
   --text-color3: #8a8f9d;
   --bneon:#8A2BE2;
   --aneon:#00ffcc;
-}
-/* 1. ОБЯЗАТЕЛЬНО задаем базовые значения переменных для светлой темы */
-/* :root {
-  --background-color: linear-gradient(-30deg, #8A2BE2 0%, rgb(205, 205, 205) 50%);
-  --header: linear-gradient(to right, rgb(186, 186, 186) 5%, rgb(172, 172, 172) 95%);
-  --footer: linear-gradient(to right, rgb(186, 186, 186) 5%, rgb(172, 172, 172) 95%);
-  --text-color: #222222;
-  --background-color2: #525252;
-  --text-color2: #ffffff;
-  --text-color3: #505154;
-} */
+  --main: rgb(255, 255, 255);
+  --adve: rgb(0, 0, 255);
+  --adve2: rgb(0, 0, 200);
+  --adve3: rgb(0, 0, 50);
+  --first: #FFD700;
+  --first2: #aa9000;
+  --first3: #ffe343;
+  --second: rgba(0,0,0,0.5);
+  --second2: lime;
+  --second3: green;
 
-/* 2. Изменяем значения этих же переменных для темной темы
-:root.dark-theme {
-  --background-color: linear-gradient(to left, #4B0082 5%, rgb(23, 23, 23) 95%);
-  --header: linear-gradient(to right, rgb(11, 11, 11) 5%, rgb(6, 6, 6) 95%);
-  --footer: linear-gradient(to right, rgb(11, 11, 11) 5%, rgb(6, 6, 6) 95%);
-  --text-color: #f3f4f6;
-  --background-color2: #b1b1b1;
-  --text-color2: #000000;
-  --text-color3: #8a8f9d;
-} */
+}
+/* разные страницы */
+body.main {
+  background: var(--backmain) !important;
+}
+body.mine {
+  background: var(--backmine) !important;
+}
+body.nutr {
+  background: var(--backnutr) !important;
+}
+/* по умолчанию */
 a {
   text-decoration: none;
   color: var(--text-color);
 }
-
 img {
   width: 100%;
 }
 h1{
   display: none;
 }
-/* 3. Применяем переменные к тегу body */
 body {
-  background: var(--background-color);
   color: var(--text-color);
   transition: all 0.3s;
   width: 100%;
@@ -71,14 +71,14 @@ body {
 }
 /* верхушка */
 header {
-  padding: 20px 20px;
+  padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   background: var(--header);
-  border-bottom: 2px var(--bneon) solid;
-
+  border-bottom: 2px var(--main) solid;
+  border-radius: 0 0 45px 45px;
 }
 .logo {
   display: flex;
@@ -86,18 +86,18 @@ header {
   align-items: center;
   flex-direction: row;
   font-size: 32px;
-  /* Создаем линейный градиент слева направо */
-  background: linear-gradient(to right, #00ffcc 50%, #8A2BE2 70%);
-  /* Магия: накладываем градиент только на текст */
+  /* Мое цветное лого */
+  background: linear-gradient(to right, var(--adve) 50%, var(--main) 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   
 }
+/* Иконка */
 .logo img {
   margin: 0px 5px;
   width: 50px;
-  
+  border-radius: 30px;
 }
 .logo:hover {
   transform: scale(1.1);
@@ -112,49 +112,28 @@ nav a{
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
-
 /* Стили для выбранной вкладки */
 nav a.active {
-  color: var(--aneon); /* Бирюзовый цвет текста */
-  border-bottom: 2px solid var(--aneon); /* Линия снизу */
-  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Эффект свечения текста */
-  background: rgba(0, 255, 204, 0.05); /* Легкий фон под вкладкой */
+  color: var(--main);
+  border-bottom: 2px solid var(--adve); 
+  text-shadow: 0 0 10px rgba(0, 0, 255, 0.5); 
+  background: rgba(0, 0, 255, 0.05); 
 }
 nav a:hover {
-  color: var(--aneon);
-  text-shadow: 0 0 10px var(--aneon);
+  color: var(--main);
+  text-shadow: 0 0 10px var(--main);
 }
-
 .addbut a,.addbut button {
   margin: 0px 2px;
   padding: 1px 3px;  
   background: none;
-  border: 1px solid var(--bneon);
+  border: 1px solid var(--adve2);
   color: var(--text-color);
-  /* СБРОС ДЕФОЛТНЫХ СТИЛЕЙ КНОПКИ */
-  outline: none;
-  line-height: 1; /* Убираем влияние высоты строки на кнопку */
-  appearance: none; /* Отключаем системные стили ОС для кнопок */
-  -webkit-appearance: none;
-
-  /* ЖЕСТКИЕ ОДИНАКОВЫЕ РАЗМЕРЫ */
-  width: 35px !important;
-  height: 35px !important;
-  padding: 0px !important; /* Гарантированно убираем внутренние отступы */
-  
-  /* ФЛЕКС-ВЫРАВНИВАНИЕ */
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  box-sizing: border-box !important;
-  
-  /* Чтобы выстроить их по одной горизонтальной линии */
-  vertical-align: middle; 
+  font-size: 30px;
 }
 .addbut a:hover,.addbut button:hover {
-  background: var(--bneon);
+  background: var(--adve2);
 }
-
 /* подвал */
 footer {
   display: flex;
@@ -165,8 +144,8 @@ footer {
   padding: 30px 0px; 
   background: var(--footer);
   color: var(--text-color);
-  border-top:  2px var(--bneon) solid;
-  
+  border-top:  2px var(--main) solid;
+  border-radius: 45px 45px 0 0;
 }
 .footertotal {
   display: flex;
@@ -192,11 +171,11 @@ footer {
   padding: 5px 10px !important; 
 }
 .namecolumn {
-  color: var(--aneon);
+  color: var(--adve);
   font-size: 24px;
 }
 .nameproject {
-  color: var(--aneon);
+  color: var(--adve);
 }
 /* вторая колонка */
 .footer_social{
@@ -209,11 +188,11 @@ footer {
   display: grid;
   place-items: center; 
   padding: 0; 
-  border: 2px solid var(--bneon);
+  border: 2px solid var(--adve2);
   font-size: 16px;
 }
 .help_a:hover {
-  background: var(--bneon);
+  background: var(--adve2);
 }
 /* третья колонка */
 .column_que {
@@ -229,13 +208,13 @@ footer {
 }
 .rec_launch {
   font-size: 22px;
-  color: var(--bneon);
+  color: var(--main);
 }
 .rec_vpn {
   font-size: 22px;
-  color: var(--bneon);
+  color: var(--main);
 }
 .questions:hover {
   color: var(--text-color);
-  text-shadow: 0 0 20px var(--bneon) ;
+  text-shadow: 0 0 20px var(--main) ;
 }

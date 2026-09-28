@@ -1,4 +1,4 @@
-<?php include 'inc/header.php';?>
+<?php $body_class = 'main'; include 'inc/header.php'; ?>
 
 <main class="mainpage">
     <!-- название страницы -->

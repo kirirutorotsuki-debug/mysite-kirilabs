@@ -1,1 +1,4 @@
-(git add ., git commit -m "текст", git push) 
+git add .
+git commit -m "my new updates"
+git pull origin main (Если косяк опять)
+git push origin main

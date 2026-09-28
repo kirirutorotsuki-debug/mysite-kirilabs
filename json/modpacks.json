@@ -1,112 +1,206 @@
 [
-{
-"name": "Versions",
-"version": "TL Legacy",
-"loader": "TL Legacy",
-"img": "img/sc1.png",
-"description": "Папка с версиями для TL Legacy, для тех кому лень скачивать по версии",
-"googleLink": "https://drive.google.com/file/d/1X-dNQriQgLv9ro-tYXdbnJ5uMe8VGshW/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Creative",
-"version": "1.21.4",
-"loader": "NeoForge",
-"img": "img/sc5.png",
-"description": "Основные моды для сервера по креативу Creative4friends.aternos.me:29221",
-"googleLink": "https://drive.google.com/file/d/1G85M3Wlli-rPyTHjA7yPkJWZIglbcBqI/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Creative Plus",
-"version": "1.21.4",
-"loader": "NeoForge",
-"img": "img/sc2.png",
-"description": "Дополнение к основным модам на сервер по креативу, косметические моды Creative4friends.aternos.me:29221",
-"googleLink": "https://drive.google.com/file/d/1afHoRSJCXqdfzNHORf5XNKRPauF69q_U/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Vanilla Plus",
-"version": "1.21.10",
-"loader": "Fabric",
-"img": "img/sc6.png",
-"description": "Моды для дополнения визуальной части, оставляя основу майнкрафта без изменений",
-"googleLink": "https://drive.google.com/file/d/1Lf8yQQ9rD00w9RDq6DMRZ5vJ5ucAv-3H/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Biohazard",
-"version": "1.20.1",
-"loader": "Neoforge",
-"img": "img/sc9.png",
-"description": "Тема: зомби-апокалипсис, большая сборка на 500 модов, взята из CurseForge и адаптирована для Tl legacy",
-"googleLink": "https://drive.google.com/file/d/1pA-kBZSYc0gqeHzzohGnnnvmnKvGD4Kf/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Super War",
-"version": "1.20.1",
-"loader": "Forge",
-"img": "img/sc7.png",
-"description": "Пак для командных боев, примерно схожеть с battlefield и т.п. Танки, оружие, укрытия и т.д.",
-"googleLink": "https://drive.google.com/file/d/1iut2_Ew7VK-F0OPMTSmjVnwbedK1UlqF/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Create Plus",
-"version": "1.20.1",
-"loader": "Neoforge",
-"img": "img/sc13.png",
-"description": "Пак из собранных модов на create, пак для глубиннного изучения create",
-"googleLink": "https://drive.google.com/file/d/1EIHf9N-j_PVKNriCGnWsQkY37TXFFpWY/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Alt Core",
-"version": "1.16.5",
-"loader": "Forge",
-"img": "img/sc11.png",
-"description": "Альтернативная сборка модов для сервера креатива, с большим количеством блоков Alt_Core.aternos.me:50151",
-"googleLink": "https://drive.google.com/file/d/1dOMu2Zo5ec0f5caPxHZmkzbiSt2O2K-I/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Alt Core Ex",
-"version": "1.16.5",
-"loader": "Forge",
-"img": "img/sc12.png",
-"description": "Визуальное дополнение к альтернативной сборке Alt_Core.aternos.me:50151",
-"googleLink": "https://drive.google.com/file/d/1GDljp7abrugLeV5kq0olG14_e2aokry5/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Nakatomi",
-"version": "1.12.2",
-"loader": "Forge",
-"img": "img/sc51.png",
-"description": "Случайно найденная старая сборка, расчитана на выживание, тема: зомби-апокалипсис",
-"googleLink": "https://drive.google.com/file/d/1Jhi2QKfPtefmxYTZdEIawScI5hxRMzak/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-},
-{
-"name": "Työviikko",
-"version": "1.12.2",
-"loader": "Forge",
-"img": "img/sc_tyo1.png",
-"description": "Пароль 1. Сборка про Industrial craft и GalacticCraft. Основано на nakatomi",
-"googleLink": "https://drive.google.com/file/d/1oCt9grFVSQYWPtGaSa1xYAdwAUgKI6A2/view?usp=drive_link",
-"yandexLink": "",
-"creator": "IJN_KIRIKAZE"
-}
+  {
+    "img": "img/sc71.png",
+    "emo": "🌲",
+    "version": "1.20.1",
+    "loader": "Forge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://google.com...",
+    "yandexLink": "https://yandex.ru...",
+    "name": {
+      "ru": "Выживание в Тайге",
+      "en": "Taiga Survival"
+    },
+    "description": {
+      "ru": "Папка с версиями для TL Legacy, для тех кому лень скачивать по версии.",
+      "en": "Folder with versions for TL Legacy, for those who are too lazy to download one by one."
+    }
+  },
+  {
+    "img": "img/sc1.png",
+    "emo": "📁",
+    "version": "TL Legacy",
+    "loader": "TL Legacy",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1X-dNQriQgLv9ro-tYXdbnJ5uMe8VGshW/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Versions",
+      "en": "Versions"
+    },
+    "description": {
+      "ru": "Папка с версиями для TL Legacy, для тех кому лень скачивать по версии",
+      "en": "Folder with versions for TL Legacy, for those who are too lazy to download one by one"
+    }
+  },
+  {
+    "img": "img/sc5.png",
+    "emo": "🎨",
+    "version": "1.21.4",
+    "loader": "NeoForge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1G85M3Wlli-rPyTHjA7yPkJWZIglbcBqI/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Creative",
+      "en": "Creative"
+    },
+    "description": {
+      "ru": "Основные моды для сервера по креативу Creative4friends.aternos.me:29221",
+      "en": "Main mods for the creative server Creative4friends.aternos.me:29221"
+    }
+  },
+  {
+    "img": "img/sc2.png",
+    "emo": "✨",
+    "version": "1.21.4",
+    "loader": "NeoForge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1afHoRSJCXqdfzNHORf5XNKRPauF69q_U/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Creative Plus",
+      "en": "Creative Plus"
+    },
+    "description": {
+      "ru": "Дополнение к основным модам на сервер по креативу, косметические моды Creative4friends.aternos.me:29221",
+      "en": "Addition to the main mods for the creative server, cosmetic mods Creative4friends.aternos.me:29221"
+    }
+  },
+  {
+    "img": "img/sc6.png",
+    "emo": "🍦",
+    "version": "1.21.10",
+    "loader": "Fabric",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1Lf8yQQ9rD00w9RDq6DMRZ5vJ5ucAv-3H/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Vanilla Plus",
+      "en": "Vanilla Plus"
+    },
+    "description": {
+      "ru": "Моды для дополнения визуальной части, оставляя основу майнкрафта без изменений",
+      "en": "Mods to complement the visual part, leaving the core of Minecraft unchanged"
+    }
+  },
+  {
+    "img": "img/sc9.png",
+    "emo": "☣️",
+    "version": "1.20.1",
+    "loader": "Neoforge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1pA-kBZSYc0gqeHzzohGnnnvmnKvGD4Kf/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Biohazard",
+      "en": "Biohazard"
+    },
+    "description": {
+      "ru": "Тема: зомби-апокалипсис, большая сборка на 500 модов, взята из CurseForge и адаптирована для Tl legacy",
+      "en": "Theme: zombie apocalypse, large modpack with 500 mods, taken from CurseForge and adapted for Tl legacy"
+    }
+  },
+  {
+    "img": "img/sc7.png",
+    "emo": "⚔️",
+    "version": "1.20.1",
+    "loader": "Forge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1iut2_Ew7VK-F0OPMTSmjVnwbedK1UlqF/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Super War",
+      "en": "Super War"
+    },
+    "description": {
+      "ru": "Пак для командных боев, примерно схожеть с battlefield и т.п. Танки, оружие, укрытия и т.д.",
+      "en": "Pack for team battles, somewhat similar to battlefield, etc. Tanks, weapons, covers, etc."
+    }
+  },
+  {
+    "img": "img/sc13.png",
+    "emo": "⚙️",
+    "version": "1.20.1",
+    "loader": "Neoforge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1EIHf9N-j_PVKNriCGnWsQkY37TXFFpWY/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Create Plus",
+      "en": "Create Plus"
+    },
+    "description": {
+      "ru": "Пак из собранных модов на create, пак для глубиннного изучения create",
+      "en": "Pack of collected mods for Create, pack for in-depth study of Create"
+    }
+  },
+  {
+    "img": "img/sc11.png",
+    "emo": "🧱",
+    "version": "1.16.5",
+    "loader": "Forge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1dOMu2Zo5ec0f5caPxHZmkzbiSt2O2K-I/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Alt Core",
+      "en": "Alt Core"
+    },
+    "description": {
+      "ru": "Альтернативная сборка модов для сервера креатива, с большим количеством блоков Alt_Core.aternos.me:50151",
+      "en": "Alternative modpack for the creative server, with a large number of blocks Alt_Core.aternos.me:50151"
+    }
+  },
+  {
+    "img": "img/sc12.png",
+    "emo": "🔮",
+    "version": "1.16.5",
+    "loader": "Forge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1GDljp7abrugLeV5kq0olG14_e2aokry5/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Alt Core Ex",
+      "en": "Alt Core Ex"
+    },
+    "description": {
+      "ru": "Визуальное дополнение к альтернативной сборке Alt_Core.aternos.me:50151",
+      "en": "Visual addition to the alternative modpack Alt_Core.aternos.me:50151"
+    }
+  },
+  {
+    "img": "img/sc51.png",
+    "emo": "🧟",
+    "version": "1.12.2",
+    "loader": "Forge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1Jhi2QKfPtefmxYTZdEIawScI5hxRMzak/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Nakatomi",
+      "en": "Nakatomi"
+    },
+    "description": {
+      "ru": "Случайно найденная старая сборка, расчитана на выживание, тема: зомби-апокалипсис",
+      "en": "Accidentally found old modpack, designed for survival, theme: zombie apocalypse"
+    }
+  },
+  {
+    "img": "img/sc_tyo1.png",
+    "emo": "🚀",
+    "version": "1.12.2",
+    "loader": "Forge",
+    "creator": "IJN_KIRIKAZE",
+    "googleLink": "https://drive.google.com/file/d/1oCt9grFVSQYWPtGaSa1xYAdwAUgKI6A2/view?usp=drive_link",
+    "yandexLink": "",
+    "name": {
+      "ru": "Työviikko",
+      "en": "Työviikko"
+    },
+    "description": {
+      "ru": "Пароль 1. Сборка про Industrial craft и GalacticCraft. Основано на nakatomi",
+      "en": "Password 1. Modpack about Industrial craft and GalacticCraft. Based on nakatomi"
+    }
+  }
 ]
